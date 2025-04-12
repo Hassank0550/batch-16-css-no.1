@@ -1,0 +1,572 @@
+
+/* General Styling for the Title */
+.title {
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px 0 15px;
+    color: #1f2d3d; /* Deeper, elegant blue-gray */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: #ffffff;
+    padding: 15px 0 25px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  }
+  
+  /* Punchline (Slogan) Styling */
+  .punchline {
+    font-style: italic;
+    font-size: 17px;
+    color: #7f8c8d; /* Elegant muted tone */
+    margin-bottom: 14px;
+  }
+  
+  /* Navbar Links */
+  .nav-link ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-link a {
+    text-decoration: none;
+    color: #2c3e50; /* Classy charcoal */
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    padding: 4px 6px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover underline effect */
+  .nav-link a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #3498db;
+    transition: width 0.3s;
+    margin: auto;
+  }
+  
+  .nav-link a:hover {
+    color: #3498db;
+  }
+  
+  .nav-link a:hover::after {
+    width: 100%;
+  }
+  /* Search Bar Box */
+  .searchbar-box {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .searchbar-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #333;  /* Dark gray for search bar title */
+  }
+  
+  /* Search Bar Input Field */
+  .searchbar input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  /* Search Bar Button */
+  .searchbar input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e67e22;  /* Orange for search button */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .searchbar input[type="submit"]:hover {
+    background-color: #d35400;  /* Darker orange on hover */
+  }
+
+/* General styling for the table section */
+.table-section {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .table-title h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #2c3e50;  /* Dark blue-gray for the title */
+  }
+  
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-table th,
+  .product-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .product-table th {
+    background-color: #ecf0f1;  /* Light gray for header */
+    color: #2c3e50;  /* Dark text color for header */
+    font-weight: bold;
+  }
+  
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product-info h3 {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    color: #3498db;  /* Blue color for product names */
+  }
+  
+  .product-table button {
+    padding: 8px 16px;
+    background-color: #4CAF50;  /* Green for primary button */
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-table button:hover {
+    background-color: #45a049;  /* Darker green on hover */
+  }
+  
+  /* Styling for table rows */
+  .product-table td {
+    background-color: #ffffff; /* White background for product rows */
+    color: #333333;  /* Dark text color for product rows */
+  }
+  
+  .product-table td:nth-child(2) {
+    color: #7f8c8d; /* Gray color for descriptions */
+  }
+  
+  .product-table td:nth-child(3) {
+    color: #e67e22;  /* Orange color for price */
+  }
+  
+  .product-table td:nth-child(4) {
+    color: #27ae60;  /* Green color for stock status */
+  }
+  
+  .product-table td:nth-child(5) {
+    color: #3498db;  /* Blue color for 'Add to Cart' button text */
+  }
+
+
+
+
+
+  .product-videos-section {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .video-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  
+  .video-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .video-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .video-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    width: 320px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+  }
+  
+  .video-card video {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .video-card h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .video-grid {
+      gap: 20px;
+    }
+  
+    .video-card {
+      width: 100%;
+      max-width: 90%;
+    }
+  
+    .video-title {
+      font-size: 28px;
+    }
+  }
+
+
+
+
+ 
+
+  .latest-product-video {
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+  }
+  
+  .latest-video-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  
+  .latest-video-title::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background-color: #007bff;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  .video-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  .video-wrapper video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease;
+  }
+  
+  .video-wrapper video:hover {
+    transform: scale(1.02);
+  }
+  
+  .video-description {
+    background: #ffffff;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    max-width: 800px;
+    width: 100%;
+    animation: fadeIn 0.6s ease-in-out;
+    text-align: left;
+  }
+  
+  .video-description h3 {
+    font-size: 26px;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .video-description p {
+    font-size: 16.5px;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 14px;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .latest-video-title {
+      font-size: 28px;
+    }
+  
+    .video-description {
+      padding: 20px;
+    }
+  
+    .video-description h3 {
+      font-size: 22px;
+    }
+  
+    .video-description p {
+      font-size: 15.5px;
+    }
+  }
+
+
+
+
+  
+  /* Checkout-section */
+
+ /* Invoice Section */
+.invoice-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .invoice-title h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .invoice-details h3 {
+    color: #2c3e50;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .invoice-items {
+    margin-bottom: 20px;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .item-name {
+    font-weight: bold;
+  }
+  
+  .item-price,
+  .item-quantity,
+  .item-total {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .invoice-totals {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .total,
+  .shipping,
+  .grand-total {
+    font-weight: bold;
+  }
+  
+  .grand-total {
+    color: #e67e22;
+  }
+  
+  .billing-info {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .billing-info h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  .form-group input[type="submit"] {
+    background-color: #e67e22;  /* Orange button */
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-group input[type="submit"]:hover {
+    background-color: #d35400;  /* Darker orange on hover */
+  }
+
+
+   /* contact */
+
+
+  /* Contact Section */
+.contact-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .contact-title h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  .form-group input[type="submit"] {
+    background-color: #e67e22;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-group input[type="submit"]:hover {
+    background-color: #d35400;  /* Darker orange on hover */
+  }

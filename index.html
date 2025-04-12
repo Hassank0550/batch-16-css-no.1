@@ -7,7 +7,229 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Mega mart</h1>
-    
+<div class="title">Mega Mart</div>
+<div class="navbar">
+    <div class="punchline">Your Complete Shopping Solution.</div>
+    <div class="nav-link">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Decorations</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="searchbar-box">
+    <div class="searchbar-title">Product Search</div>
+    <div class="searchbar">
+        <input type="text" name="searchbar" id="searchbar" placeholder="Search The Product....">
+        <input type="submit" value="Search">
+    </div>
+</div>
+
+<section class="table-section">
+    <div class="table-title"><h2>Featured Products</h2></div>
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="product-info">
+            <img src="headphone.png" alt="High-quality noise-cancelling headphones" height="100" width="100">
+            <h3>Headphone</h3>
+          </td>
+          <td>High-quality sound with noise-cancelling feature</td>
+          <td>€99</td>
+          <td>In stock</td>
+          <td><button>Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td class="product-info">
+              <img src="watch.jpeg" alt="Smart Watch" height="100" width="100">
+              <h3>Smart Watch</h3>
+            </td>
+            <td>Track your fitness, receive notifications, and more</td>
+            <td>€149</td>
+            <td>In stock</td>
+            <td><button>Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td class="product-info">
+              <img src="earbuds.jpeg" alt="Wireless Earbuds" height="100" width="100">
+              <h3>Earbuds</h3>
+            </td>
+            <td>Compact wireless earbuds with crystal-clear audio</td>
+            <td>€79</td>
+            <td>In stock</td>
+            <td><button>Add to Cart</button></td>
+          </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+
+  <section class="product-videos-section">
+    <h2 class="video-title">Product Videos</h2>
+    <div class="video-grid">
+      <div class="video-card">
+        <video controls poster="headphone.png">
+          <source src="headphone.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Headphone Overview</h3>
+      </div>
+      <div class="video-card">
+        <video controls poster="watch.jpeg">
+          <source src="watch.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Smart Watch Features</h3>
+      </div>
+      <div class="video-card">
+        <video controls poster="earbuds.jpeg">
+          <source src="earbuds.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Earbuds Review</h3>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section class="latest-product-video">
+    <h2 class="latest-video-title">Latest Product Video</h2>
+    <div class="video-wrapper">
+      <video controls poster="blender.jpg">
+        <source src="blender.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-description">
+        <h3>PowerBlend Pro Smoothie Blender</h3>
+        <p>Unleash the power of healthy living with the PowerBlend Pro Smoothie Blender. Designed for performance and convenience, it features a powerful 1200W motor, 6 stainless steel blades, and multiple speed settings to effortlessly crush ice, frozen fruits, and seeds.</p>
+        <p>Whether you're making post-workout protein shakes, creamy morning smoothies, or fresh sauces and soups — PowerBlend Pro delivers ultra-smooth consistency in seconds. The BPA-free jar is dishwasher-safe, and the compact design fits any kitchen counter with ease.</p>
+        <p>Make every blend better with PowerBlend Pro — your everyday partner in wellness and flavor.</p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+
+
+  <div class="invoice-section">
+    <div class="invoice-title">
+      <h2>Invoice</h2>
+    </div>
+    <div class="invoice-details">
+      <h3>Order Summary</h3>
+      <div class="invoice-items">
+        <div class="item">
+          <span class="item-name">Headphone</span>
+          <span class="item-price">€99.00</span>
+          <span class="item-quantity">x 1</span>
+          <span class="item-total">€99.00</span>
+        </div>
+        <div class="item">
+          <span class="item-name">Smart Watch</span>
+          <span class="item-price">€149.00</span>
+          <span class="item-quantity">x 1</span>
+          <span class="item-total">€149.00</span>
+        </div>
+      </div>
+      <div class="invoice-totals">
+        <div class="total">
+          <span>Total:</span>
+          <span>€248.00</span>
+        </div>
+        <div class="shipping">
+          <span>Shipping:</span>
+          <span>€10.00</span>
+        </div>
+        <div class="grand-total">
+          <span>Grand Total:</span>
+          <span>€258.00</span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="billing-info">
+      <h3>Billing Information</h3>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Shipping Address</label>
+        <textarea id="address" name="address" rows="4" placeholder="Enter your shipping address" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="payment-method">Payment Method</label>
+        <select id="payment-method" name="payment-method" required>
+          <option value="credit-card">Credit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="bank-transfer">Bank Transfer</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="card-details">Card Number (if Credit Card)</label>
+        <input type="text" id="card-details" name="card-details" placeholder="Enter card number" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Proceed to Payment">
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-section">
+    <div class="contact-title">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="contact-form">
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Your message..." required></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Send Message">
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
 </body>
 </html>
